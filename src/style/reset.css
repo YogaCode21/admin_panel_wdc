@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  transition: all 0.5s ease-in-out;
+}
+
+::selection{
+  background-color: #40494f;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}

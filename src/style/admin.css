@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+:root {
+  --gray: #2F2F35;
+  --light-gray : #3A3B41;
+  --white: #ffffff;
+  --purple: #4F5E9C;
+
+  --font-small: 12px;
+  --font-medium: 20px;
+  --font-large: 42px;
+
+  --font-family: "Outfit", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  height: 100vh;
+  background-color: var(--gray);
+  color: var(--white);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: var(--purple);
+  height: 100vh;
+  padding: 2rem;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-sidebar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.link {
+  display: flex;
+  gap: 30px;
+  font-size: var(--font-medium);
+  color: var(--white);
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  background-color: #434f81;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+.exit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #434f81;
+  border-radius: 5px;
+  font-size: var(--font-medium);
+  font-weight: bold;
+  gap: 30px;
+  color: var(--white);
+}
+
+.content {
+  padding: 2rem;
+  flex: 15;
+  margin-bottom: 100px;
+}
+
+.content h1{
+  font-size: var(--font-large);
+  font-weight: bold;
+}
+
+.content p{
+  text-align: justify;
+  margin: 20px;
+}
+
+@media (max-width: 869px) {
+  .sidebar{
+    border: none;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0px 25px;
+    width: 100%;
+    align-items: center;
+    border-radius: 0;
+  }
+
+  .main-sidebar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .links{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .link{
+    padding: 10px;
+  }
+
+  .header-sidebar{
+    display: flex;
+    flex-direction: row;
+    display: none;
+  }
+  
+  .exit{
+    padding: 10px;
+  }
+}
