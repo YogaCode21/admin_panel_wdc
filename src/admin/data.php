@@ -47,7 +47,7 @@
         </div>
         <div class="content">
             <h1>All Student</h1>
-            <a href="input.php">
+            <a href="input.html">
             <button>Input Data</button>
             </a>
             <table class="show">

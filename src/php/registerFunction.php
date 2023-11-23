@@ -9,7 +9,7 @@ $query = "INSERT INTO user (nama, email, password, status)
 $push = mysqli_query($koneksi, $query);
 
 if ($push) {
-    header('location: ../../index.php?');
+    header('location: ../../index.html?');
 } else {
-    header('location: ../../register.php?');
+    header('location: ../../register.html?');
 }

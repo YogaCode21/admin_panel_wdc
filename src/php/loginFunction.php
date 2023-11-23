@@ -11,5 +11,5 @@ if ($cek > 0) {
     $_SESSION['status'] = "login";
     header("location:../admin/admin.php");
 } else {
-    header("location:../../index.php");
+    header("location:../../index.html");
 }
