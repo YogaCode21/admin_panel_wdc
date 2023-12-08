@@ -27,4 +27,3 @@ WDC Admin Panel is a panel admin website that makes it easy for users to manage 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-
